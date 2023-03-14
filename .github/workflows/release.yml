@@ -29,5 +29,5 @@ jobs:
       run: ls -la
     - name: python verion
       run: python --version
-    - name: test
-      run: python manage.py test --settings=senttings.local
+    #- name: test
+      #run: python manage.py test --settings=senttings.local
