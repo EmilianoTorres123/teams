@@ -44,3 +44,5 @@ jobs:
         fail_on_empty: false
     - name: show .env file
       run: cat .env
+    - name: run test
+      run: python manage.py test --settings=senttings.local -v 3 --keepdh
