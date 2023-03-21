@@ -65,3 +65,5 @@ class CreateEquipo(graphene.Mutation):
 #4
 class Mutation(graphene.ObjectType):
     create_equipo = CreateEquipo.Field()
+
+schema = graphene.Schema(query=Query, mutation=Mutation)
