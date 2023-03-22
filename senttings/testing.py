@@ -27,7 +27,7 @@ SECRET_KEY = config("TEST_SECRET_KEY", default=' ')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -71,13 +71,16 @@ TEMPLATES = [
     },
 ]
 
+WSGI_APPLICATION = 'teams.wsgi.application'
+
+# Database
+# https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 TEST_DATABASE = config("TEST_DATABASE", default='')
 TEST_USER = config("TEST_USER", default='')
 TEST_PASSWORD = config("TEST_PASSWORD", default='')
 TEST_HOST = config("TEST_HOST", default='')
 TEST_PORT = config("TEST_PORT", default=5432)
-# Database
-# https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+
 
 DATABASES = {
     'default': {
