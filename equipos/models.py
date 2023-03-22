@@ -4,7 +4,7 @@ from django.db import models
 
 class Equipo(models.Model):
     nombre = models.TextField(default='', blank=False)
-    fundacion = models.IntegerField(default='', blank=False)
+    fundacion = models.IntegerField(default=0)
     continente = models.TextField(default='', blank=False)
     trofeos = models.IntegerField(default=0)
     presidente = models.TextField(default='', blank=False)
