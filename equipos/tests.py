@@ -73,5 +73,5 @@ class EquipoTestCase(GraphQLTestCase):
         content = json.loads(response.content)
         print(content)
         self.assertResponseNoErrors(response)
-        self.assertDictEqual({"createEquipo": {"continente": "europa", "fundacion": 1934, "liga": "premier league", "nombre": "ars  enal", "numerojuga": 25, "pais": "inglaterra", "presidente": "fermin", "trofeos": 24, "trofeosinte": 12,  "trofeosloca": 21 }}, content['data']) 
+        self.assertDictEqual({"createEquipo": {"continente": "europa", "fundacion": 1934, "liga": "premier league", "nombre": "arsenal", "numerojuga": 25, "pais": "inglaterra", "presidente": "fermin", "trofeos": 24, "trofeosinte": 12,  "trofeosloca": 21 }}, content['data']) 
 
