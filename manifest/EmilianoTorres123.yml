@@ -1,0 +1,41 @@
+piVersion: apps/v1
+kind: Deployment
+metadata:
+  name: EmilianoTorres123
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: EmilianoTorres123
+  template:
+    metadata:
+      labels:
+        app: EmilianoTorres123
+    spec:
+      containers:
+      - image: okteto.dev/EmilianoTorres123:latest
+        name: adsoftsito
+        envFrom:
+        - configMapRef:
+            name: EmilianoTorres123-config
+        livenessProbe:
+          httpGet:
+            path: /ht/
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 5
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: adsoftsito
+  annotations:
+    dev.okteto.com/auto-ingress: "true"
+spec:
+  type: ClusterIP
+  ports:
+  - name: "adsoftsito"
+    port: 8080
+  selector:
+    app: adsoftsito
