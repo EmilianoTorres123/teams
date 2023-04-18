@@ -1,12 +1,12 @@
 build:
- adsoftsito:  # cambiar por su namespcode
+ emilianotorres123:  # cambiar por su namespcode
  - kubectl apply -f manifests # create all thace de okteto
-   image: okteto.dev/adsoftsito:latest  # cambiar por su namespace de okteto
+   image: okteto.dev/emilianotorres123:latest  # cambiar por su namespace de okteto
 
 deploy:
  - okteto build # build the image with the latest e resources in kubernetes
 dev:
- adsoftsito:
+ emilianotorres123:
    command: bash
    sync:
    - .:/teams  # cambiar por su proyecto
