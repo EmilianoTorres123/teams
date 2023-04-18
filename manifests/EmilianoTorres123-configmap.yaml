@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
- name: EmilianoTorres123-config
+ name: emilianotorres123-config
  labels:
    app: postgres
 data:
