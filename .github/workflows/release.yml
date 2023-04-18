@@ -27,7 +27,7 @@ jobs:
       run: lsb_release -a
     - name: list directory
       run: ls -la
-    - name: python verion
+    - name: python version
       run: python --version
     - name: install dependencies
       run: pip install -r requirements.txt
