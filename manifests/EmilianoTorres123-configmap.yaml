@@ -5,9 +5,9 @@ metadata:
  labels:
    app: postgres
 data:
-PROD_SECRET_KEY : 'edwar' 
-PROD_DATABASE : 'xehautgp' 
-PROD_USER : 'xehautgp' 
-PROD_PASSWORD : '0wHfp3AGNc5fgz_1iQn6hU2YvMAd6RVq' 
-PROD_HOST : 'hansken.db.elephantsql.com' 
-PROD_PORT : 5432    
+PROD_SECRET_KEY : edwar 
+PROD_DATABASE : xehautgp 
+PROD_USER : xehautgp 
+PROD_PASSWORD : 0wHfp3AGNc5fgz_1iQn6hU2YvMAd6RVq 
+PROD_HOST : hansken.db.elephantsql.com' 
+PROD_PORT : "5432"    
