@@ -6,7 +6,7 @@ build:
 deploy:
  - okteto build # build the image with the latest e resources in kubernetes
 dev:
- adsoftsito:
+ emilianotorres123:
    command: bash
    sync:
    - .:/teams  # cambiar por su proyecto
