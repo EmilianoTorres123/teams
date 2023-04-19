@@ -3,8 +3,8 @@ build:
    image: okteto.dev/emilianotorres123:latest  # cambiar por su namespace de okteto
 
 deploy:
-  - kubectl apply -f manifests # create all thace de okteto
-  - okteto build # build the image with the latest e resources in kubernetes
+ - okteto build # build the image with the latest code
+ - kubectl apply -f manifests # create all thace de okteto
 dev:
  emilianotorres123:
    command: bash
