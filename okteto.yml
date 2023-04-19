@@ -1,6 +1,5 @@
 build:
  emilianotorres123:  # cambiar por su namespcode
- 
    image: okteto.dev/emilianotorres123:latest  # cambiar por su namespace de okteto
 
 deploy:
