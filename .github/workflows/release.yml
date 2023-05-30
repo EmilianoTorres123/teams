@@ -47,7 +47,7 @@ jobs:
     - name: run test
       run: python manage.py test --settings=senttings.testing -v 3 --keepdb
       
-    - name: update DEV_SECRET_KEY
+    - name: update MY_DEV_SECRET_KEY
       run: sed -i 's/MY_DEV_SECRET_KEY/${{secrets.DEV_SECRET_KEY}}/g' manifests/EmilianoTorres123-configmap.yaml      
     - name: update MY_DEV_DATABASE
       run: sed -i 's/MY_DEV_DATABASE/${{secrets.DEV_DATABASE}}/g' manifests/EmilianoTorres123-configmap.yaml      
