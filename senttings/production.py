@@ -77,19 +77,19 @@ WSGI_APPLICATION = 'teams.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-PROD_DATABASE = config("DEV_DATABASE", default='')
-PROD_USER = config("DEV_USER", default='')
-PROD_PASSWORD = config("DEV_PASSWORD", default='')
-PROD_HOST = config("DEV_HOST", default='')
-PROD_PORT = config("DEV_PORT", default=5432)
+PROD_DATABASE = config("TEST_DATABASE", default='')
+PROD_USER = config("TEST_USER", default='')
+PROD_PASSWORD = config("TEST_PASSWORD", default='')
+PROD_HOST = config("TEST_HOST", default='')
+PROD_PORT = config("TEST_PORT", default=5432)
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': DEV_DATABASE,
-        'USER': DEV_USER,
-        'PASSWORD': DEV_PASSWORD,
-        'HOST': DEV_HOST,
-        'PORT': DEV_PORT,
+        'NAME': TEST_DATABASE,
+        'USER': TEST_USER,
+        'PASSWORD': TEST_PASSWORD,
+        'HOST': TEST_HOST,
+        'PORT': TEST_PORT,
         #'TEST': {
         #    'NAME': TEST_DATABASE,
         #},
