@@ -50,6 +50,10 @@ jobs:
       with:
        token: ${{ secrets.OKTETO_TOKEN }}
     - name: Deploy
+    
+    - name: show config 
+      run: cat manifests/EmilianoTorres123-configmap.yaml
+      
       uses: okteto/pipeline@2.7.0
       with:
         name: emilianotorres123 # cambiar por su namespace
